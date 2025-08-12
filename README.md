@@ -168,10 +168,4 @@ npm run build
 
 For Docker deployment, see the Docker Deployment section above.
 
-## 🙏 Acknowledgments
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
-
-Built with ❤️ on Rocket.new
