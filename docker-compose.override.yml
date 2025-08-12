@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    # Mount source code for development
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./package.json:/app/package.json
+      - ./vite.config.mjs:/app/vite.config.mjs
+    # Enable hot reloading
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    # Expose development port
+    ports:
+      - "4028:4028"
+    # Command for development
+    command: npm start
+
+  nginx:
+    # Mount local nginx config for development
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+      - "443:443"

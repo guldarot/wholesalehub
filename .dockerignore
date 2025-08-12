@@ -1,0 +1,40 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Build outputs
+build
+dist
+
+# Environment files
+.env
+.env.local
+.env.production.local
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git
+
+# Log files
+*.log
+
+# Temporary files
+tmp
+temp
+
+# Docker files (to avoid including docker files in docker image)
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Supabase files
+supabase/

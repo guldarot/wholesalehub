@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Check</title>
+</head>
+<body>
+    <h1>Application is running</h1>
+    <p>Health check endpoint</p>
+    <script>
+        // Simple health check response
+        const health = {
+            status: "healthy",
+            timestamp: new Date().toISOString(),
+            version: "1.0.0"
+        };
+        
+        // Output health info to console
+        console.log("Health check:", health);
+    </script>
+</body>
+</html>
