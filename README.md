@@ -166,6 +166,6 @@ Build the application for production:
 npm run build
 ```
 
-For Docker deployment, see the Docker Deployment section above.
+For Docker Deployment, see the Docker Deployment section above.
 
 
